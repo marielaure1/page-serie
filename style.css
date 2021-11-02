@@ -1,0 +1,103 @@
+body{
+    font-family: 'Lato', sans-serif;
+    /* background-color: rgb(114, 3, 25); */
+    background-image: url("nuage-sombre.jpg");
+    background-position: center;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+#title{
+    position: absolute;
+    background-color: rgba(220, 20, 60, 0.281);
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+h1, h2, h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 18px;
+    text-align: center;
+}
+
+h2{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 20px 0 10px 0;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100%/3);
+    height: 50px;
+}
+
+nav ul li a{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(201, 193, 193);
+}
+
+nav ul li:hover, :nth-child(){
+    background-color: rgba(255, 255, 255, 0.527);
+    color: black;
+}
+
+p, #distribution ul, #savoir-plus ul{
+    color: rgb(201, 193, 193);
+    padding: 10px;
+}
+
+section{
+    background-color: rgba(0, 0, 0, 0.616);
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#savoir-plus a{
+    color: rgb(201, 193, 193);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0px
+}
+
+
+
+
+
