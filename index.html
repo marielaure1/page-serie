@@ -3,23 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Raccourci pour insérer un commentaire:
-        - CMD-SHIFT-: sur Mac
-        - CTRL-:-: sur Windows
-        Les copmmentaires ne sont pas interprétés par le navigateur.
-        Les commentaires servent soit:
-        - à écrire des anotations
-        - désactiver du code sans toutefois l'éffacer
-         -->
-
-         <!-- Un texte d'environ 80 caratères -->
         <title>American Horror Story, la série d'horreur</title>
-
-         <!-- Un texte d'environ 160 caratères -->
         <meta name="description" 
         content="American Horror Story vous plonge dans des histoires paranormales et mystérieuses. Chaque saisons raconte une histoire differente: maison hantée,l'apocalypse.">
 
-        <link rel="shortcut icon" href="favicon-32x32-1.png" type="image/x-icon">
+        <link rel="shortcut icon" href="images/webstart-logo.png" type="image/x-icon">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,23 +18,17 @@
 
     </head>
     <body>
-        <!--main = contenu pp 
-            aside = contenu complémentaire
-            figure = image + légende
-            pour la légende = figcaption
-        -->
-        <!-- CHAQUE PAGE DOIT OBLIGATOIREMENT AVOIR UN H1 -->
         <header>
             <div id="title">
-                <h1>American Horror Story, la série d'horreur disponible sur FX Hulu</h1>
+                <h1>American Horror Story<br> la série d'horreur disponible sur FX Hulu</h1>
             </div>
-            
-            <img src="affiche4.jpg" alt="Affiche de la saison 10 de la série American Horror Story">
             <nav>
                 <ul>
-                    <li><a href="#synopsis">Synopsis</a></li>
-                    <li><a href="#distribution">Distribution</a></li>
-                    <li><a href="#savoir-plus">Pour en savoir plus</a></li>
+                    <a href="#synopsis"><li>Synopsis</li></a>
+                    <a href="#distribution"><li>Distribution</li></a>
+                    <a href="#savoir-plus"><li>En savoir plus</li></a>
+                    <a href="#" id="btn-saisons"><li>10 saisons</li></a>
+                    <div id="saisons"></div>
                 </ul>
             </nav>
         </header>
@@ -59,39 +41,52 @@
 
             <section id="distribution">
                 <h2>Distribution</h2>
-                <!-- LES ENFANTS DIRECTS D'UNE UL NE PEUVENT ÊTRE QUE DES LI -->
-                <!-- LES LI DOIVENT ÊTRE OBLIGATOIREMENT PLACES DANS UN UL OU UN OL -->
-                <ul>
-                    <li>Sarah Paulson (VF: Mélody Dubos)</li>
-                    <li>Evan Peters (VF: Hervé Grull)</li>
-                    <li>Jessica Lange (VF: Béatrice Delfe)</li>
-                    <li>Lily Rabe (VF: Anne O'Dolan)</li>
-                    <li>Frances Conroy (VF: Anne Rochant)</li>
-                    <li>Kathy Bates (VF: Denise Metmer)</li>
-                    <li>Leslie Grossman (VF: Julie Turin)</li>
-                    <li>Angelica Ross (VF: Corinne Wellong)</li>
-                    <li>Billie Lourd (VF: Sarah Marot)</li>
-                </ul>
+                <div id="acteurs-doubleurs">
+                    <div id="acteurs">
+                        <ul>
+                            <li>Sarah Paulson</li>
+                            <li>Evan Peters</li>
+                            <li>Jessica Lange</li>
+                            <li>Lily Rabe</li>
+                            <li>Frances Conroy</li>
+                            <li>Kathy Bates</li>
+                            <li>Leslie Grossman</li>
+                            <li>Angelica Ross</li>
+                            <li>Billie Lourd</li>
+                        </ul>
+                    </div>
+                    <div id="doubleurs">
+                        <ul>
+                            <li>VF: Mélody Dubos</li>
+                            <li>VF: Hervé Grull</li>
+                            <li>VF: Béatrice Delfe</li>
+                            <li>VF: Anne O'Dolan</li>
+                            <li>VF: Anne Rochant</li>
+                            <li>VF: Denise Metmer</li>
+                            <li>VF: Julie Turin</li>
+                            <li>VF: Corinne Wellong</li>
+                            <li>VF: Sarah Marot</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
             <section id="savoir-plus">
                 <h2>Pour en savoir plus</h2>
-                <!-- ul>li*3 -->
                 <ul>
                     <li>
-                        <a href="https://fr.wikipedia.org/wiki/Liste_des_%C3%A9pisodes_d%27American_Horror_Story#Liste_des_%C3%A9pisodes" target="_blank">Liste des épisodes sur Wikipedia</a>
+                        <a href="https://fr.wikipedia.org/wiki/Liste_des_%C3%A9pisodes_d%27American_Horror_Story#Liste_des_%C3%A9pisodes" target="_blank">- Liste des épisodes sur Wikipedia</a>
                     </li>
                     <li>
-                        <a href="https://www.hulu.com/series/american-horror-story-a67a233c-fcfe-4e8e-b000-052603ddd616" target="_blank">La série sur FX Hulu</a>
+                        <a href="https://www.hulu.com/series/american-horror-story-a67a233c-fcfe-4e8e-b000-052603ddd616" target="_blank">- La série sur FX Hulu</a>
                     </li>
                     <li>
-                        <!-- Les liens pointant vers une page extérieur à notre site doivent avoir l'attribut target="_blank" pour que l'utilisateur ne quittent pas définitivement notre site -->
-                        <a href="https://www.popfixion.fr/articles/article-259-Series-TV-American-Horror-Story-ou-leffrayant-elegant" target="_blank">American Horror Story ou l'effrayant élégant</a>
+                        <a href="https://www.popfixion.fr/articles/article-259-Series-TV-American-Horror-Story-ou-leffrayant-elegant" target="_blank">- American Horror Story ou l'effrayant élégant</a>
                     </li>
                 </ul>
             </section>
         </main>
-        <footer>Copyright 2021</footer>
+        <footer><p>Copyright 2021</p></footer>
 
 
     </body>

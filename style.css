@@ -1,105 +1,142 @@
-@font-face { font-family: Psychopathy; src: url('font/GRAPHIC\ PSYCHOPATHY.ttf'); } 
+/* Font */
+@font-face { font-family: Psychopathy; src: url('font/psychopathy.ttf'); } 
+
+/* Générale */
 body{
     font-family: 'Lato', sans-serif;
-    /* background-color: rgb(114, 3, 25); */
-    background-image: url("nuage-sombre.jpg");
+    background-image: url("images/branches-arbre.jpg");
     background-position: center;
-    width: 100vw;
-    overflow: hidden;
+    background-size: cover;
+    overflow-x: hidden;
 }
 
+/* HEADER */
+header{
+    background-image: url("images/banner.jpg");
+    height: 80vw;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 
+/* Title */
 #title{
     position: absolute;
-    background-color: rgba(220, 20, 60, 0.281);
+    background-color: rgba(220, 20, 60, 0.918);
     width: 100%;
     height: 8vh;
     display: flex;
     align-items: center;
-}
-
-h2, h3{
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    justify-content: center;
 }
 
 h1{
     font-family: Psychopathy, 'Lato';
     font-size: 18px;
     text-align: center;
+    color: white;
 }
 
-h2{
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    margin: 20px 0 10px 0;
-    text-transform: uppercase;
-    padding-top: 10px;
-}
-
+/* Menu */
 nav{
-    background-color: rgba(0, 0, 0, 0.548);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 nav ul{
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
-
 }
 
-nav ul li{
+nav ul a{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(100%/3);
+    width: 25%;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.548);
     height: 50px;
 }
 
-nav ul li a{
-    font-size: 12px;
-    text-decoration: none;
-    color: rgb(201, 193, 193);
+nav ul a li{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(252, 248, 248);
 }
 
-nav ul li:hover, :nth-child(){
+/* Menu Hover */
+nav ul a:hover{
+    transition: 1s ease-in-out;
     background-color: rgba(255, 255, 255, 0.527);
-    color: black;
 }
 
-p, #distribution ul, #savoir-plus ul{
-    color: rgb(201, 193, 193);
-    padding: 10px;
+nav ul a:hover li{
+    color: rgba(220, 20, 60, 0.918);
 }
 
+/* 10 saisons */
+
+#btn-saisons:hover{
+    background-color: rgba(220, 20, 60, 0.918);
+}
+
+#btn-saisons:hover li{
+    color: white;
+}
+
+#btn-saisons:hover ~ #saisons{
+    background-image: url("images/dix-saisons.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vw;
+    position: absolute;
+    bottom: 50px;
+    transition: 2s;
+}
+
+/* MAIN */
 section{
-    background-color: rgba(0, 0, 0, 0.616);
+    background-color: rgba(0, 0, 0, 0.801);
     margin: 0 10px;
     border-radius: 10px;
 }
 
-a{
+h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(220, 20, 60, 0.918);
+    text-align: center;
+    margin: 20px 0 10px 0;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+/* Paragraphes et Listes */
+p, #distribution ul, #savoir-plus ul, #savoir-plus a{
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-#savoir-plus a{
-    color: rgb(201, 193, 193);
+p, #distribution ul, #savoir-plus ul{
+    padding: 15px;
 }
 
+#acteurs-doubleurs{
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER */
 footer{
-    background-color: black;
+    background-color: rgba(220, 20, 60, 0.918);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 70px;
-    position: absolute;
-    bottom: 0px
+    height: 100px;
+    margin-top: 50px;
 }
-
-
-
-
-
